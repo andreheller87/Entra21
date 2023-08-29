@@ -12,6 +12,7 @@ import java.util.Scanner;
             
             System.out.println("===================");
             System.out.println(carta1 + " " + carta2);
+            System.out.println("===================");
             System.out.println("A soma das sua cartas é: " +soma);
             do{
             System.out.println("Deseja mais uma carta? S/N");
@@ -46,7 +47,7 @@ import java.util.Scanner;
             }
             
             
-            System.out.println("===================");
+            
             
             
         
