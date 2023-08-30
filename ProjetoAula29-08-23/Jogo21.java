@@ -11,7 +11,12 @@ import java.util.Scanner;
             char escolha;
             
             System.out.println("===================");
-            System.out.println(carta1 + " " + carta2);
+            System.out.println("Cartas inicial");
+            System.out.println("  ____  ____");
+            System.out.println(" | * | | * |");
+            System.out.println(" | " +carta1 + " | | " + carta2+ " |");
+            System.out.println(" |   | |   |");
+            System.out.println("  ----  ----");
             System.out.println("===================");
             System.out.println("A soma das sua cartas é: " +soma);
             do{
@@ -26,8 +31,16 @@ import java.util.Scanner;
                 
                 case 'S':
                     soma = soma + novaCarta;
+                     System.out.println("===================");
+            System.out.println("Nova Carta");
+            System.out.println("  ____ ");
+            System.out.println(" | * | ");
+            System.out.println(" | " +novaCarta + " | ");
+            System.out.println(" |   | ");
+            System.out.println("  ----  ");
+            System.out.println("===================");
                     if(soma >21){
-                        System.out.println("Você perdeu");
+                        System.out.println("Você perdeu!!");
                          System.out.println("A soma das sua cartas é: " +soma);
                         return;
                     }else{
@@ -38,9 +51,9 @@ import java.util.Scanner;
                     System.out.println("A soma das sua cartas é: " +soma);
                     System.out.println("A soma do computador  é: " +comp);
                     if(soma>= comp){
-                         System.out.println("Você ganhou");
+                         System.out.println("Você ganhou!!");
                     }else{
-                         System.out.println("Você Perdeu");
+                         System.out.println("Você Perdeu!!");
                     }
                     return;
                  
