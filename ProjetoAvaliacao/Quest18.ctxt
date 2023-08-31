@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Quest18
+comment0.text=\r\n18.\tEscreva\ um\ algoritmo\ que\ exiba\ 20\ vezes\ a\ mensagem\ \u201CEu\ gosto\ de\ estudar\ Algoritmos\!\u201D.\r\nUtilize\ o\ comando\ de\ repeti\u00E7\u00E3o\ Para\ (For).\ \u0000\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

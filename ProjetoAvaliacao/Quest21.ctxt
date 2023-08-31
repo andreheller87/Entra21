@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Quest21
+comment0.text=21.Escreva\ um\ algoritmo\ que\ calcule\ a\ soma\ dos\ n\u00FAmeros\ de\ 1\ a\ 15.\ Utilize\ o\ comando\ de\ repeti\u00E7\u00E3o\ Para\ (For).
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
