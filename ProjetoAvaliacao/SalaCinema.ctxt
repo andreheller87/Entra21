@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=SalaCinema
+comment1.params=numero\ capacidade
+comment1.target=SalaCinema(int,\ int)
+comment2.params=filme
+comment2.target=void\ exibirFilme(Filme)
+comment3.params=
+comment3.target=void\ encerrarFilme()
+numComments=4
