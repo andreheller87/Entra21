@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games Super Nintendo</title>
+    <style>
+        #imagem {
+            position: absolute;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body BGCOLOR="lightgray">
     <header>
@@ -31,7 +37,8 @@
     </header>
 
     <section>
-     <CENTER>  <h1 ALING="center">Jogos clássicos Super-Nintendo</h1></CENTER> 
+     <CENTER>   <h1 align="center">Jogos clássicos Super-Nintendo</h1></
+    </CENTER> 
      <CENTER>
      <table  border="1" bordercolor="Black" width="300" ALING="center">
 
@@ -95,11 +102,36 @@
             <td> <p width="300" height="300"> para se considerado o mais forte do mundo. Ryu luta e vence Sagat na final, se tornando campeão. Street Fighter II difere do seu antecessor por oferecer ao jogador uma seleção múltipla de personagens jogáveis, cada um com o seu próprio estilo de luta e movimentos especiais, com Ryu e Ken a serem os únicos com movimentos idênticos
         </tr>
         
-        
+        <img id="imagem" src="./img/Mario-gif.gif" width="100" height="100">
     </section>
 </CENTER>
-   
+
+
+
+<script>
+    const imagem = document.getElementById('imagem');
+    let mouseX, mouseY;
+
+    function moveImagem(event) {
+        mouseX = event.pageX + 15; 
+        mouseY = event.pageY;
+
+        imagem.style.left = mouseX + 'px';
+        imagem.style.top = mouseY + 'px';
+    }
+
+    document.addEventListener('mousemove', moveImagem);
+
+    
+    document.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A' || event.target.tagName === 'BUTTON') {
+            
+            document.removeEventListener('mousemove', moveImagem);
+        }
+    });
+</script>
     
     
 </body>
+
 </html>
