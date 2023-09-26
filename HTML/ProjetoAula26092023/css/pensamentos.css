@@ -1,0 +1,14 @@
+body{
+    background-color: blueviolet;
+    color: white;
+
+}
+h1{
+    font-weight: bold;
+    font-size: 5em;
+    text-align: center;
+}
+h3{
+    padding-left: 5em;
+    font-size: 3em;
+}

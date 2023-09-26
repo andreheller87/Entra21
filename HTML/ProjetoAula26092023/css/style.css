@@ -8,6 +8,10 @@ body{
 h1,h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+img{
+    width:15em;
+    height: 20em;
+}
 
 h1{
     border-bottom: 3px solid #aaa;
@@ -36,9 +40,18 @@ label{
     margin-right: 10px;
 
 }
+#divisao1{
+    position: relative;
+    width: 15em;
+    margin: 5em;
+    border: 1em solid rgb(162, 160, 160);
+}
+span{
+   margin-top: 1em;
+}
 
 label:after{
-    content: ":";
+    content: "*";
 }
 a{
 text-decoration: none;
