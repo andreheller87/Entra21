@@ -1,4 +1,8 @@
+body{
+    background-color: black;
+}
 .btn{
+    
     border: none;
     font-family: Georgia;
     font-size: inherit;
@@ -46,11 +50,11 @@
 }
 
 .btn-1:hover{
-    background: #2980b9;   
+    background:   #6eb8e9;
 }
 
 .btn-1:active{
-    background: #2980b9;  
+    background: #6eb8e9; 
     top: 2px; 
 }
 
@@ -66,42 +70,90 @@
 }
 
 .btn-2{
-    background: #2ecc71;
+    background: #15e96e;
     color: #fff; 
 }
 
 .btn-2:hover{
-    background: #27ae60;   
+    background: #39aa68;   
 }
 
 .btn-2:active{
-    background: #27ae60;  
+    background: #39aa68;
     top: 2px; 
 }
 
+.btn-2:before{
+    position: absolute; 
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+
+}
+
 .btn-3{
-    background: #2ecc71;
+    background: #767804;
     color: #fff; 
 }
 
 .btn-3:hover{
-    background: #27ae60;   
+    background: #daed5e;   
 }
 
 .btn-3:active{
-    background: #27ae60;  
+    background: #daed5e;  
     top: 2px; 
 }
+
+.btn-3:before{
+    position: absolute; 
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+
+}
 .btn-4{
-    background: #2ecc71;
+    background: #cc2e2e;
     color: #fff; 
 }
 
 .btn-4:hover{
-    background: #27ae60;   
+    background: #cd625d;   
 }
 
 .btn-4:active{
-    background: #27ae60;  
+    background: #cd625d;  
     top: 2px; 
+}
+
+
+
+.btn-4:before{
+    position: absolute; 
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+
+}
+
+.icon-cart:before{
+    content:"\f07a";
+}
+.icon-heart:before{
+    content:"\f55a";
+}
+.icon-info:before{
+    content:"\f05a";
+}
+.icon-send:before{
+    content:"\f1d8";
 }
