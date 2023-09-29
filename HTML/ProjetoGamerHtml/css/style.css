@@ -1,0 +1,78 @@
+@keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: #FCCA00; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container{
+    background: lightgray;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    animation: color 8s infinite linear;
+}
+
+img{
+    width: 11em;
+  height: 7em;
+}
+
+.mario{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+   
+}
+.mortal{
+    position: absolute;
+    bottom: 0;
+}
+.stf{
+    position: absolute;
+    right: 0;
+}
+h1{
+    text-align: center;
+    color: rgb(9, 255, 0);
+    font-size: 700;
+    font-weight: 40px;
+}
+
+  
+.lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: black;
+     margin-left:25%;
+  
+     width: 500px;
+     padding: 20px;
+}
+
+
+li{
+  font-size: 1.5em;
+  color: white;
+ 
+}
+
+
+
+
+
+
+
+
+
