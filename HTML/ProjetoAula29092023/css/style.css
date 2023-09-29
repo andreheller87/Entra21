@@ -1,7 +1,15 @@
+.container{
+    position: relative;
+    background: lightgray;
+}
 .box-orange{
+    position: fixed;
     background: orange;
-    height: 100px;
+    height:100px;
     width: 100px;
+    
+   right: 5px;
+  
 }
 
 .box-blue{
@@ -10,3 +18,4 @@
     width: 100px;
     position: static;
 }
+
