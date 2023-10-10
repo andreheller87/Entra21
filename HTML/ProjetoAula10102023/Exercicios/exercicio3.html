@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora JavaScript</title>
+    <style>
+
+        body{
+            background: gray;
+        }
+        
+        .conteiner {
+            
+            background: rgb(237, 143, 27);
+            display:flexbox;
+            flex-direction: row;
+            width: 450px;
+            height: 400px;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin-top: 3em;
+            overflow: hidden;
+        }
+
+        .conteiner h1{
+            text-align: center;
+        }
+
+        .conteiner  input{
+            width: 87%;
+            height: 2em;
+            margin-bottom: 1em;
+           
+
+        }
+        .conteiner button {
+            cursor: pointer;
+            background: black;
+            color: white;
+            width: 100px;
+            height: 50px;
+           
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+<body >
+    <div align="center">
+    <div class="conteiner" align="center" >
+    <h1>Calculadora</h1>
+    
+    <input type="text" id="display" ><br>
+    
+    <button onclick="limpar()">C</button>
+    <button onclick="botao('7')">7</button>
+    <button onclick="botao('8')">8</button>
+    <button onclick="botao('9')">9</button>
+    <button onclick="botao('+')">+</button>
+    
+    <button onclick="botao('4')">4</button>
+    <button onclick="botao('5')">5</button>
+    <button onclick="botao('6')">6</button>
+    <button onclick="botao('-')">-</button>
+    
+    <button onclick="botao('1')">1</button>
+    <button onclick="botao('2')">2</button>
+    <button onclick="botao('3')">3</button>
+    <button onclick="botao('*')">*</button>
+    
+    <button onclick="botao('0')">0</button>
+    <button onclick="calcula()">=</button>
+    <button onclick="botao('/')">/</button>
+    </div>
+</div>
+    <script>
+        function limpar() {
+            document.getElementById('display').value = '';
+        }
+
+        function botao(value) {
+            document.getElementById('display').value += value;
+        }
+
+        function calcula() {
+            const expression = document.getElementById('display').value;
+            const result = eval(expression);
+            document.getElementById('display').value = result;
+        }
+    
+    </script>
+</body>
+</html>
+
+    
+</body>
+</html>

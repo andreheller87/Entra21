@@ -1,0 +1,31 @@
+<!--2)Crie um código em JavaScript calculando a média de 4 notas, e mostrando o resultado de Aprovado e Reprovado, sabendo que 7 é a média.(utilize o alert).-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        nota1= parseFloat(window.prompt("Digite a primeira nota?")) ;
+        nota2= parseFloat(window.prompt("Digite a segunda nota?")) ;
+        nota3= parseFloat(window.prompt("Digite a terceira nota?")) ;
+        nota4= parseFloat(window.prompt("Digite a quarta nota?")) ;
+
+        media = (nota1 + nota2 + nota3 + nota4) /4
+    
+        if(media<10 && media>=7){
+            alert("Aluno foi aprovado. Nota:" + media );
+        }
+        else if(media<7){
+            alert("Aluno foi reprovado. Nota: " + media);
+        }else{
+            alert("Media invalida!")
+        }
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
