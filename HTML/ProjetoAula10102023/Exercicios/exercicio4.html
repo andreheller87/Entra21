@@ -1,0 +1,52 @@
+<!--4)Crie um código em JavaScript que mostre saudação ao usuário e abra 2 sites, e que tenha também um button que ao clicar apareça uma imagem no tamanho total da página.-->
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo JavaScript</title>
+    
+</head>
+<body>
+   
+
+    <button id="mostrarImagem" >Clique para mostrar a imagem</button>
+    <button onclick="abrirSites('youtube')" >Youtube</button>
+    <button onclick="abrirSites('infinity')" >Infinity Tech</button>
+
+    <div id="imagemContainer" style="display: none;">
+        <img src="../img/mortalkombat.gif" alt="Imagem em tamanho total">
+    </div>
+
+
+    <script>
+        nome=window.prompt("Qual seu  nome?");
+    
+        if (nome!=null && nome!="")
+       {
+           document.writeln("Olá, " + nome + "!\n");
+       
+       }
+       else
+       {
+       document.writeln("Olá, visitante!\n");
+       }
+       
+       
+
+        
+        function abrirSites(site) {
+            if(site == 'youtube'){
+                window.open('https://www.youtube.com/', '_blank');
+            }
+            else{
+                window.open('https://infinitytech2023.netlify.app/', '_blank');
+            }
+            
+        }
+        
+        document.getElementById('mostrarImagem').addEventListener('click', function() {
+            var imagemContainer = document.getElementById('imagemContainer');
+            imagemContainer.style.display = 'block';
+        });
+    </script>
+</body>
+</html>

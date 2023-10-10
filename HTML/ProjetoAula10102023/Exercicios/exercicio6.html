@@ -1,0 +1,50 @@
+ <!--6)Crie um código em JavaScript que utilize o for ou o While.-->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel de Imagens</title>
+    <style>
+        body{
+            background: black;
+        }
+
+        h1{
+            color: azure;
+        }
+
+        div{
+            width:"500px";
+            overflow: hidden;
+            margin-top: 3em;
+        }
+        #imagem {
+          width: 500px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div align="center" >
+        <h1>Demon Slayer</h1>
+    <img id="imagem" src="../img/30195056339745.jpg" alt="Imagem 1">
+   </div>
+    <script>
+        const imagens = ["../img/legiao_tF8Z2Cnm40DU.png.webp", "../img/gyomei.jpg", "../img/30195056339745.jpg"];
+        let indiceAtual = 0;
+
+        function trocarImagem() {
+            document.getElementById("imagem").src = imagens[indiceAtual];
+            indiceAtual = (indiceAtual + 1) % imagens.length; 
+        }
+
+        for (let i = 0; i < 100; i++) {
+            setTimeout(function () {
+                trocarImagem();
+            }, i * 3000);
+            
+        }
+    </script>
+</body>
+</html>

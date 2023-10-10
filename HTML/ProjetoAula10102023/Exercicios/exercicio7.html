@@ -1,0 +1,97 @@
+<!--7)Crie um código em JavaScript que faça alguma alteração ou aplicação em uma tabela.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Produtos</title>
+    <style>
+
+        body{
+            background: blanchedalmond;
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+          
+            margin-bottom: 2em;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Produtos</h1>
+    <form id="produtoForm" align="center">
+        <input type="text" id="nome" placeholder="Nome do Produto" required>
+        <input type="number" id="preco" placeholder="Preço" required>
+        <button type="submit">Adicionar</button>
+    </form>
+    <table  align="center">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="listaProdutos">
+        </tbody>
+    </table>
+
+    <script>
+        const produtoForm = document.getElementById('produtoForm');
+        const listaProdutos = document.getElementById('listaProdutos');
+
+        produtoForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const nome = document.getElementById('nome').value;
+            const preco = document.getElementById('preco').value;
+
+            if (!nome || !preco) {
+                alert('Por favor, preencha todos os campos.');
+                return;
+            }
+
+            const newRow = listaProdutos.insertRow();
+            newRow.innerHTML = `
+                <td>${nome}</td>
+                <td>${preco}</td>
+                <td><button onclick="editarProduto(this)">Editar</button> <button onclick="excluirProduto(this)">Excluir</button></td>
+            `;
+
+            produtoForm.reset();
+        });
+
+        function editarProduto(button) {
+            const row = button.parentNode.parentNode;
+            const cells = row.getElementsByTagName('td');
+
+            const nome = cells[0].textContent;
+            const preco = cells[1].textContent;
+
+            document.getElementById('nome').value = nome;
+            document.getElementById('preco').value = preco;
+
+            row.remove();
+        }
+
+        function excluirProduto(button) {
+            const row = button.parentNode.parentNode;
+            row.remove();
+        }
+    </script>
+</body>
+</html>
