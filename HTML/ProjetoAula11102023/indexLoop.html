@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var quantos = prompt("Quantos X`s você quer ver?(de 1 a 10 está de bom tamanho)", "");
+        
+        var quantos=20;
+        quantos = prompt("Quantos X`s você quer ver?(de 1 a 10 está de bom tamanho)", "");
+        while(quantos>10){
+            alert("Número tem que ser menor que 10")
+            quantos = prompt("Quantos X`s você quer ver?(de 1 a 10 está de bom tamanho)", "");
+      
+       
+        }
         var xises="";
         var loop = 0;
         while(loop<quantos){
