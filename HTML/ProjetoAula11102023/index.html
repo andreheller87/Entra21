@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Texto</title>
     <script language="JavaScript">
-        var cerveja = prompt("Qual cerveja você prefere, kol ou Kaiser?","");
-        adjetivo = "Redondo";
-        cor = "orange";
+
+        var cerveja = prompt("Qual cerveja você prefere, Skol ou Kaiser?","");
+        var adjetivo;
+        var cor;
+        
+        if(cerveja == "Skol"){
+            adjetivo = "redondo";
+            cor = "orange";
+        }else if(cerveja == "Kaiser"){
+            adjetivo = "quadrado";
+            cor = "red";
+        }else{
+            adjetivo = "confuso";
+            cor="blue";
+        }
+        
+
     </script>
 
 </head>
