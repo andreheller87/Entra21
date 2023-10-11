@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Texto</title>
     <script language="JavaScript">
 
-        var cerveja = prompt("Qual cerveja você prefere, Skol ou Kaiser?","");
+        var cerveja = prompt("Qual cerveja você prefere, Skol ou Kaiser?", "");
         var adjetivo;
         var cor;
-        
-        if(cerveja == "Skol"){
+
+        if (cerveja == "Skol") {
             adjetivo = "redondo";
             cor = "orange";
-        }else if(cerveja == "Kaiser"){
+        } else if (cerveja == "Kaiser") {
             adjetivo = "quadrado";
             cor = "red";
-        }else{
+        } else {
             adjetivo = "confuso";
-            cor="blue";
+            cor = "blue";
         }
-        
+        var frase = "Se você gosta da cerveja " + cerveja + ", este é o seu momento " + adjetivo + "";
+        document.write(frase);
 
     </script>
 
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
