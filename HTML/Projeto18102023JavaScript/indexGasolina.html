@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo de gasolina</title>
+    <link rel="stylesheet" href="./css/styleGasolina.css">
+    <script src="./js/scriptGasolina.js"></script>
+</head>
+<body>
+    <label for="inputDistancia"> Distância (km): </label>
+    <input id="inputDistancia" type="text">
+    
+    <div>
+      <label for="estacionamento">Estacionamento:     
+      <input type="radio" id="sim" name="gender" value="sim"> Sim
+      <input type="radio" id="nao" name="gender" value="nao" checked> Não
+      </label>
+    </div>
+    
+      <button id="botaoCalcular" onclick="calcular()">
+      Calcular
+    </button>
+    
+    
+</body>
+</html>
