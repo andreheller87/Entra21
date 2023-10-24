@@ -1,7 +1,7 @@
 
 let nomes = document.getElementById("inputNome");
 
-console.log(nomes)
+
 
 function gerar(){
     inputNome.value =  nomes.value
@@ -10,6 +10,7 @@ function gerar(){
     while (contador > 0){
       contador = contador - 1
         certificadoHTML = emitirCertificado(inputNome.value)
+        
     }
     
     listaLinks = [

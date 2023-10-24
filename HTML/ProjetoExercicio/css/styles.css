@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #010101, #fefefe);
+    color: white;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #f3ecec;
+}
+
+.conteinner{
+    margin: auto;
+    width: 50%;
+    position: relative;
+    border: 1px solid black;
+}
+
+.conteinner input{
+  font-size: 1.5rem;
+   width: 80%;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    position: absolute;
+}
+
+li {
+    text-align: justify;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+button {
+    font-size: 1.2rem;
+    right: 2px;
+    position: absolute;
+}
