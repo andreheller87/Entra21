@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumindo</title>
+    <script src="./Js/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div").animate({
+                left: '250px',
+                height:'+=150px',
+                width: '+=150px'
+        });
+        });
+    });
+        
+    </script>
+</head>
+<body>
+    <button>iniciar a animação</button>
+
+    <p>animação no seu local padrão, mover.</p>
+
+    <div style="background:#98bf21; height:100px; width:100px;position:absolute;" ></div>
+    
+   
+</body>
+</html>
