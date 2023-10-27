@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+         $("button").click(function(){
+              $("#div1").fadeIn();
+              $("#div2").fadeIn("slow");
+              $("#div3").fadeIn(300);
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+
+  <p>Demonstra o fadeIn() com diferentes parametros, no caso cor.</p>
+   
+
+  <button>click para surgir os div(boxes)</button><br><br>
+
+
+<div id="div1" style="width: 800px;height: 100px; display: none;background-color: red;" > <img src="./img/transferir.jpeg" alt="" width="100px" height="100px"><img src="./img/Pato_Donald_2017.png" alt="" width="100px" height="100px">
+</div><br>
+<div id="div2" style="width: 80px;height: 80px; display: none;background-color: yellow;"></div><br>
+<div id="div3" style="width: 80px;height: 120px; display: none;background-color: green;"></div><br>
+
+
+    
+</body>
+</html>
