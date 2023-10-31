@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(8, 24, 39) ;
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+h2{
+    margin: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+
+}
+
+.conteiner{
+    
+    display: flex;
+    margin: 2rem;
+    gap: 2rem;
+   
+}
+
+footer{
+    height: 40px;
+    background-color: red;
+    
+}
+
+footer a{
+   cursor: pointer;
+   color: black;
+   font-size: 2rem;
+  
+   margin-left: 2rem;
+}
+
