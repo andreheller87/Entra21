@@ -12,7 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient( #0d0d0d, #aca49f);
+    background: linear-gradient( #0d0d0d, #fd0707);
     
 }
 
@@ -43,14 +43,14 @@ button{
     font-size:1.7rem;
     cursor: pointer;
     margin:1.2rem;
-    background: linear-gradient( #0d0d0d, #aca49f);
+    background: linear-gradient( #0d0d0d, #fd0707);
     padding: 0.2rem;
     color: #fff;
 }
 
 button:hover{
 
-    background: linear-gradient( #aca49f, #0d0d0d);
+    background: linear-gradient(  #fd0707, #0d0d0d);
 }
 
 
