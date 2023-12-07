@@ -2,6 +2,10 @@
 comment0.target=StockKeeper
 comment1.params=name
 comment1.target=StockKeeper(java.lang.String)
-comment2.params=album\ name\ artist\ price\ numberOfCopies
-comment2.target=void\ manageAlbum(Album,\ java.lang.String,\ java.lang.String,\ double,\ int)
-numComments=3
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=name
+comment3.target=void\ setName(java.lang.String)
+comment4.params=album\ name\ artist\ price\ numberOfCopies
+comment4.target=void\ manageAlbum(Album,\ java.lang.String,\ java.lang.String,\ double,\ int)
+numComments=5
