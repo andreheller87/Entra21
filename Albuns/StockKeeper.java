@@ -8,19 +8,19 @@ public class StockKeeper {
 		super();
 		this.name = name;
 	}
-    	
 	
-	public void manage(Album album,String name, String artist, double price,int numberOfCopies) {
-		album.name = name;
-		album.artist = artist;
-		album.price = price;
-		album.numberOfCopies = numberOfCopies;
+	
+	public void manageAlbum(Album album,String name, String artist, double price,int numberOfCopies) {
+		album.setName(name);
+		album.setArtist(artist);
+		album.setPrice(price);
+		album.setNumberOfCopies(numberOfCopies);
 		
 		System.out.println("Album gerenciado por: " + this.name);
 		System.out.println("Detalhas do album:::::::::");
-		System.out.println("Nome do album: " + album.name);
-		System.out.println("Artista do album: " + album.artist);
-		System.out.println("preço do album: " + album.price);
-		System.out.println("Número de cópias do album: " + album.numberOfCopies);
+		System.out.println("Nome do album: " + album.getName());
+		System.out.println("Artista do album: " + album.getArtist());
+		System.out.println("preço do album: " + album.getPrice());
+		System.out.println("Número de cópias do album: " + album.getNumberOfCopies());
 	}
 }
