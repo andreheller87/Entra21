@@ -6,9 +6,11 @@ public class Contas {
 		System.out.println("O resultado é: " + operacao.calcular(x, y));
 	}
 	public static void main(String[] args) {
+		
 		Contas.mostrarCalculo(new Soma(), 5, 5);
 		Contas.mostrarCalculo(new Subtracao(), 5, 5);
 		Contas.mostrarCalculo(new Subtracao(), 15, 5);
+		
 	}
 
 }
