@@ -1,0 +1,14 @@
+1- crie uma calculadora de idade onde devera ser digitado o ano de nascimento diminuindo do ano atual 
+com os seguintes calculos idade em meses, em dias e horas
+
+2-crie uma calculadora de medias de um aluno onde teremos 4 notas sera calculado a media e ao fim do calculo
+ de media devemos ter a opcao de calcular a media de outro aluno sim ou não
+
+3-crie uma calculadora de combustivel, 
+observaçao estes codigos pode ser com dados constante e variavel onde eu devo ter ou digitar
+ o valor da gasolina  alcool gnv disel e quantidade de combustivel devera ser impresso na tela bem
+ vindo no posto tal estamos localizados emtre en contados  e opcao 1 g 2 gnv
+o calculo deve ser com quatidade e preço do combustivel
+
+4 crie um codigo de uma petShop, onde tera a operação e o valor gasto, operação teremos 1 tosa 2 banho 3 vacina 4 tosa + banho 5 tosa + vacina 6 banho + vacina 7 tosa + banho + vacina
+ob: devera ser dado um valor para cada execução e o resultado divido
