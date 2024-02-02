@@ -47,6 +47,8 @@ public class Calculos {
 		return (res);
 	}
 
+	
+
 	public float calculo02(){
 		total = num1 - 3 * num2;
 		return(total);

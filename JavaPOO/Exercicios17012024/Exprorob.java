@@ -47,7 +47,7 @@ public class Exprorob {
 			
 			}
 			System.out.println("\n\n==========================");
-			System.out.println("Resultado: " + calc.getTotal());
+			System.out.println("Resultado: " + resultado);
 			System.out.println("\n\n==========================");
 			
 		}
